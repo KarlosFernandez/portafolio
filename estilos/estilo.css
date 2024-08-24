@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
+
+:root{
+    --colorUno: #000000;
+    --colorDos: #F6F6F6;
+    --colorTres: #22D4FD;
+    --colorCuatro: #272727;
+
+    --fuenteUno: "Montserrat", sans-serif;
+    --fuenteDos: "Krona One", sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: var(--colorUno);
+    color: var(--colorDos);
+    /*height: 100vh;*/
+}
+/*
+strong{
+    color: #22D4FD;
+}
+*/
+
+.cabecera{
+    padding: 2% 0% 0% 15%;
+}
+
+.cabecera_menu{
+    display: flex;
+    gap: 80px;
+}
+
+.cabecera_menu_link{
+    font-family: var(--fuenteUno);
+    font-size: 1.5rem;
+    font-weight: 600;;
+    color: var(--colorTres);
+    text-decoration: none;
+}
+
+.cabecera_menu_link:hover{
+    color: #007BFF;
+}
+
+.presentacion{
+    padding: 6% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.presentacion_contenido{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.presentacion_contenido_titulo{
+    font-size: 2.25rem;
+    font-family: var(--fuenteDos);
+}
+
+.destacarTitulo{
+    color: var(--colorTres);
+}
+
+.presentacion_contenido_texto{
+    font-size: 1.5rem;
+    font-family: var(--fuenteUno);
+}
+
+.presentacion_enlaces{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.presentacion_enlaces_subtitulo{
+    font-family: var(--fuenteDos);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.presentacion_enlaces_link{
+    width: 50%;
+    text-align: center;
+    padding: 21.5px 0;
+    border-radius: 8px;
+    font-family: var(--fuenteUno);
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--colorDos);
+    border: 2px solid var(--colorTres);
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.presentacion_enlaces_link:hover{
+    background-color: var(--colorCuatro);
+}
+
+.presentacion_imagen{
+    width: 50%;
+}
+
+.piedepagina{
+    background-color: var(--colorTres);
+    padding: 24px;
+    color: var(--colorUno);
+    text-align: center;
+    font-family: var(--fuenteUno);
+    font-size: 24px;
+    font-weight: 400;
+}
+
+@media(max-width: 1200px){
+    .cabecera{
+        padding: 10%;
+    }
+    .cabecera_menu{
+        justify-content: center;
+    }
+    .presentacion{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    .presentacion_contenido{
+        width: auto;
+    }
+}
